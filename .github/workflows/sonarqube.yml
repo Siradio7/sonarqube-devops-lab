@@ -43,6 +43,7 @@ jobs:
 
       # 5. Analyse SonarQube
       - name: SonarQube Analysis
+        if: github.event_name == 'push'
         env:
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
