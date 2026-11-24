@@ -13,7 +13,7 @@ jobs:
   quality-analysis:
     name: Tests and SonarQube Analysis
 
-    runs-on: [self-hosted, linux, x64, fedora, sonarqube]
+    runs-on: [self-hosted, macOS, ARM64, macos, sonarqube]
 
     defaults:
       run:
